@@ -8,14 +8,20 @@
 4. Ausgabe in Konsole
 */
 
-
+// modul subtraction a - b | test:
+output(subtraction(5,3));
+output(subtraction(3,5));
+function subtraction(a,b) {
+    return a - b;
+    
+}
 
 
 // modul: addition a + b | test:
 
-output(add(2,3));
-output(add(2,-2));
-output(add(2.4,2.1));          
+// output(add(2,3));
+// output(add(2,-2));
+// output(add(2.4,2.1));          
 
 function add(a,b) {
         return a + b;
