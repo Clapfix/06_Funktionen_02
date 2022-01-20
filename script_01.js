@@ -11,6 +11,40 @@
 
 
 
+// modul: addition a + b | test:
+
+output(add(2,3));
+output(add(2,-2));
+output(add(2.4,2.1));          
+
+function add(a,b) {
+        return a + b;
+}
+
+function output(outputData) {               
+    console.log(outputData);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** Späßle *****/
 
 /*
@@ -18,22 +52,22 @@
  wir gehen in den Wienerwald. 
 */
 
-/*
- servieren(anrichten(gemuesekoch(),saucenkoch()));
 
-function servieren(teller) {
-    console.log("Einmal einen " + teller +  ", Bitte sehr!")
-}
+//  servieren(anrichten(gemuesekoch(),saucenkoch()));
 
-function anrichten(kartoffeln,soße) {
-    return "Teller mit: "+ kartoffeln + " " + soße;
-}
+// function servieren(teller) {
+//     console.log("Einmal einen " + teller +  ", Bitte sehr!")
+// }
 
-function gemuesekoch(){
-    return "gekochte Kartoffeln";
- }
+// function anrichten(kartoffeln,soße) {
+//     return "Teller mit: "+ kartoffeln + " " + soße;
+// }
+
+// function gemuesekoch(){
+//     return "gekochte Kartoffeln";
+//  }
  
- function saucenkoch() {
-     return "lecker Sauce";
- }
- */
+//  function saucenkoch() {
+//      return "lecker Sauce";
+//  }
+ 
