@@ -4,18 +4,15 @@
 0. a+b / a-b/ a*b / a/b  // ergebnis c
 1. Dateneingabe + -überprüfung
 2. Auswahl Rechenart
-3. Fkt. Grundrechenarten
-4. Ausgabe in Konsole
+3. Fkt. Grundrechenarten                check
+4. Ausgabe in Konsole                   ckeck
 */
 
 // modul division a / b | test:
-// output(divide(9,3));
-// output(divide(120,10));
-// output(divide(10,2));
-// output(divide(5,5));
+output(divide(10,2));
+output(divide(5,5));
 output(divide(0,2));
 output(divide(2,0));              
-
 function divide(a,b){
     
     if (b==0) {
@@ -24,7 +21,6 @@ function divide(a,b){
         return a/b;
     }
 }
-
 // modul multiplikation a * b | test:
 // output(multiply(6,3));
 // output(multiply(3,3));
@@ -48,8 +44,14 @@ function subtraction(a,b) {
 function add(a,b) {
         return a + b;
 }
-function output(outputData) {               
-    console.log(outputData);
+// modul: console output | test:
+function output(outputData) { 
+    if (typeof outputData == "number") {
+        console.log("Das Ergebnis ist: "+ outputData);        
+    } else {
+        console.log("ERROR: " + outputData);
+    }              
+   
 }
 
 
