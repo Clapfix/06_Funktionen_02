@@ -8,9 +8,23 @@
 4. Ausgabe in Konsole
 */
 
+// modul division a / b | test:
+
+
+// modul multiplikation a * b | test:
+output(multiply(6,3));
+output(multiply(3,3));
+output(multiply(-3,3));
+output(multiply(3,0));
+function multiply(a,b) {
+    return a * b;
+    
+}
+
+
 // modul subtraction a - b | test:
-output(subtraction(5,3));
-output(subtraction(3,5));
+// output(subtraction(5,3));
+// output(subtraction(3,5));
 function subtraction(a,b) {
     return a - b;
     
@@ -18,7 +32,6 @@ function subtraction(a,b) {
 
 
 // modul: addition a + b | test:
-
 // output(add(2,3));
 // output(add(2,-2));
 // output(add(2.4,2.1));          
