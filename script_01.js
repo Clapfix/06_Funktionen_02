@@ -3,20 +3,69 @@
 /*
 0. a+b / a-b/ a*b / a/b  // ergebnis c  
 1. Dateneingabe + -überprüfung
-2. Auswahl Rechenart                    
+2. Auswahl Rechenart                    check
 3. Fkt. Grundrechenarten                check
 4. Ausgabe in Konsole                   ckeck
 */
 
+// application / App
+startApp();
+function startApp() {
+    output(calculator(2,2,getOp()));
+    //output(calculator(getNumber()),getNumber(),getOp()));
+}
+function getNumber() {
+    return 2;
+    
+}
+
+
+
+// modul: input operator | test:
+// output(getOp());
+function getOp() {
+    const displayStr = "Bitte korrekten Operator (+|-|*|:)eingeben";
+    let op = prompt(displayStr)
+
+    // if op is NOT valid AND user DIDN'T click at Abbrechen
+    while (!isOpValid(op) && (op !== null)) {
+        op = prompt(displayStr);
+    }
+    return op;
+}
+
+// modul check operator | test:
+// agreement : "+","-","*",":"
+// output(isOpValid("+"));
+// output(isOpValid("-"));
+// output(isOpValid("*"));
+// output(isOpValid(":"));
+// output(isOpValid("#?#"));
+// output(isOpValid(""));
+function isOpValid(op) {
+    switch (op) {
+        case "+":
+        case "-":
+        case "*":
+        case ":":
+            return true;
+    
+        default:
+            return false;
+    }
+    return true;
+    // 2 variant
+    // return op == "+" || op == "-" || op =="*" || op == ":"  
+}
+
 // modul: calculus | test:
 // agreement : "+","-","*","/"
-output(calculator(2,2,"+"));
-output(calculator(2,2,"-"));
-output(calculator(2,2,"*"));
-output(calculator(2,2,":"));
-output(calculator(2,0,":"));
-output(calculator(2,0,"#!"));
-
+// output(calculator(2,2,"+"));
+// output(calculator(2,2,"-"));
+// output(calculator(2,2,"*"));
+// output(calculator(2,2,":"));
+// output(calculator(2,0,":"));
+// output(calculator(2,0,"#!"));
 function calculator(a,b,op) {
     switch (op) {
         case "+":                       // addition
